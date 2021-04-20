@@ -1,0 +1,114 @@
+		Fundamental
+		===========
+
+Types of Language:
+==================
+
+1.high Level Language
+2.Mid Level Language
+3.Low Level Language
+
+
+1.high Level Language:
+======================
+human communication Language(Tamil,english,hindi,etc.........)
+
+2.Mid Level Language:
+=====================
+Translator.
+
+Convert high level language into low level Language.
+1.intrepreter
+2.Compilers
+
+ 3.Low Level Language:
+=====================
+Machine known Language(binary values---bits 0 or 1).
+
+program:
+========
+set of instruction to do a specific task.
+
+			c programming
+			=============
+
+Introduction:
+=============
+
+Develaped by Dennis Ritchie.
+when----1972 at AT&T BELL laboratories.
+
+Influenced by CPL,BCPL,ALGOL,B Language.
+CPL----Combined Programming Language
+BCPL---Basic Combined Programming Language
+B language
+
+cpl,bcpl,B language are interpreter Langauge.
+
+
+Interpreter:
+============
+Need to convert the high level into low level language.
+
+before converting the program it need to check the program have any errors.
+
+The interpreter will checks the error in line by line.
+if there any error in a line it will stop the error checking process in that  line.
+when the error was cleared then it will check next line.
+
+c Language------compiler Language
+
+Compiler:
+=========
+Need to convert the high level into low level Language.
+before converting the program it needs to check the program have any errors.
+
+once checks the whole program and display all errors.
+
+
+Structure of C program:
+=======================
+
+Documention Section
+
+preprocessor Directives(Header files)
+
+return_type main()
+{
+ statements;
+}
+
+
+Documentation Section:
+======================
+we provide some details about program.
+
+1.single line command(//):
+==========================
+	hide the details of that line.
+
+2.Multi Line Command:(/*.......*/)
+==================================
+
+/*----starting before the details
+
+	details
+
+*/---after  ending the details
+
+
+
+Basic Program:
+==============
+
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+  clrscr();
+
+  printf("Livewire");
+
+  getch();
+}
