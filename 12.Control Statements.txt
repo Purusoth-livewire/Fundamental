@@ -1,0 +1,224 @@
+conditional control statements:
+===============================
+
+1.if statements:
+================
+It will check the condition 
+when condition will be true then  excutes true(if) block only.
+
+syntax 1:
+========
+
+if(condition)
+{
+  statements;
+}
+
+program:
+========
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+  int s1,s2;
+  clrscr();
+
+  printf("Enter Two students Marks : \n");
+  scanf("%d%d",&s1,&s2);
+
+  if(s1>s2)
+  {
+    printf("student 1 is Topper.\n");
+    printf("student 1 mark : %d\n",s1);
+  }
+
+  getch();
+}
+
+**********************************************************
+2.if-else statements:
+======================
+It will check the condition 
+when condition will be true it will excutes (if)true block.
+when condition will be false it will excutes (else)false block.
+
+syntax :
+=======
+
+if(condition)
+{
+  statements;
+}
+else
+{
+  statements;
+}
+
+program:
+=========
+
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+  int s1,s2;
+  clrscr();
+
+  printf("Enter Two students Marks : \n");
+  scanf("%d%d",&s1,&s2);
+
+  if(s1>s2)
+  {
+    printf("student 1 is Topper.\n");
+    printf("student 1 mark : %d\n",s1);
+
+  }
+  else
+  {
+    printf("student 2 is Topper.\n");
+    printf("student 2 mark : %d\n",s2);
+
+  }
+
+  getch();
+}
+
+*************************************************************
+3.ladder if-else or if-else-if statements:
+==========================================
+
+syntax:
+=======
+if(condition)
+{
+  statements;
+}
+else if(condition)
+{
+  statements;
+}
+  .
+  .
+  .
+  .
+else if(condition-1)
+{
+  statements;
+}
+else
+{
+  statements;
+}
+
+program:
+========
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+  int s1,s2;
+  clrscr();
+
+  printf("Enter Two students Marks : \n");
+  scanf("%d%d",&s1,&s2);
+
+  if(s1>s2)
+  {
+    printf("student 1 is Topper.\n");
+    printf("student 1 mark : %d\n",s1);
+  }
+
+  else if(s1<s2)
+  {
+    printf("student 2 is Topper.\n");
+    printf("student 2 mark : %d\n",s2);
+  }
+  else
+  {
+    printf("student 1 and student 2 both are Toppers.\n");
+    printf("student 1 mark : %d\n",s1);
+    printf("student 2 mark : %d\n",s2);
+  }
+
+  getch();
+}
+
+******************************************************************
+4.Nested if-else statements:
+============================
+
+Syntax:
+
+if(condition)
+{
+	if(condition)
+	{	
+	statemets;
+	}
+	else
+	{
+	statements;
+	}		
+}
+else
+{
+	if(condition)
+	{	
+	statemets;
+	}
+	else
+	{
+	statements;
+	}	
+}
+
+program:
+========
+
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+  int s1,s2,s3;
+  clrscr();
+
+  printf("Enter Three students Mark : \n");
+  scanf("%d%d%d",&s1,&s2,&s3);
+
+
+  if(s1>s2)
+  {
+    if(s1>s3)
+    {
+      printf("Student 1 is Topper.\n");
+      printf("student 1 mark : %d\n",s1);
+    }
+    else
+    {
+      printf("Student 3 is Topper.\n");
+      printf("student 3 mark : %d\n",s3);
+    }
+  }
+
+  else
+  {
+     if(s2>s3)
+     {
+       printf("student 2 is Topper.\n");
+       printf("student 2 mark : %d\n",s2);
+     }
+     else
+    {
+      printf("Student 3 is Topper.\n");
+      printf("student 3 mark : %d\n",s3);
+    }
+  }
+
+
+  getch();
+}
+************************************************************
